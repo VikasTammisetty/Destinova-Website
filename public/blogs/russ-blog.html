@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Russia Travel Blogs | Destinova</title>
+  <link rel="stylesheet" href="./blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body class="russ-blog">
+<!-- HEADER -->
+<header>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/Images/Destinova (1).png" alt="Destinova logo" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <span id="usernameDisplay" class="username" style="display:none;"></span>
+      <a id="loginLink" class="action_btn" href="/loginpage/login.html">Login / Signup</a>
+            <a id="bookingLink" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a>
+
+      <button id="logoutLink" class="action_btn" style="display:none; cursor:pointer;">Logout</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <nav id="ham-nav">
+    <div class="logo">
+      <a href="/index.html"><img src="/Images/Destinova (1).png" alt="Destinova logo" /></a>
+    </div>
+
+    <div id="ham-icon" class="ham-menu" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul id="menu-links" class="menu-link">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+
+      <li id="usernameDisplayMobile" style="display:none;"></li>
+      <li><a id="loginLinkMobile" href="/loginpage/login.html">Login / Signup</a></li>
+            <li><a id="bookingLinkMobile" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a></li>
+
+      <li><button id="logoutLinkMobile" style="display:none; cursor:pointer;" class="action_btn">Logout</button></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<section class="blog-hero">
+  <h1>Russia Travel Stories</h1>
+</section>
+
+<div class="blog-container">
+
+  <div class="blog-article">
+    <img src="../Images/rus5.jpg">
+    <div class="blog-content">
+      <h2>Moscow — City of History</h2>
+      <p>Red Square, Kremlin, and St. Basil’s Cathedral make Moscow unforgettable.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <div class="blog-article">
+    <img src="../Images/rus6.jpg">
+    <div class="blog-content">
+      <h2>St. Petersburg — Cultural Capital</h2>
+      <p>Known as the Venice of the North, filled with palaces, canals & museums.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <div class="blog-article">
+    <img src="../Images/rus7.webp">
+    <div class="blog-content">
+      <h2>Siberia — Wild & Frozen</h2>
+      <p>Lake Baikal, snowy landscapes, and unique wildlife adventures.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+</div>
+
+
+<footer class="site-footer">
+  <p>© 2025 Destinova. All Rights Reserved.</p>
+</footer>
+
+<!-- UNIVERSAL AUTH HANDLING -->
+ 
+<script type="module" src="../firebase.js"></script>
+<script type="module" src="../authState.js"></script>
+<script type="module" src="../script.js"></script>
+
+</body>
+</html>

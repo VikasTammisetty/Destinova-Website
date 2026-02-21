@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | Destinova</title>
+  <link rel="stylesheet" href="./sign.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+  <div class="signup-container">
+    <div class="signup-box">
+
+      <h2>Create Your Account</h2>
+      <p class="subtitle">Join Destinova and start your travel journey</p>
+<form id="signup-form">
+
+  <div class="input-group">
+    <label>Full Name</label>
+    <input type="text" id="fullname" placeholder="Enter your name" required>
+  </div>
+
+  <div class="input-group">
+    <label>Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+  </div>
+
+  <div class="input-group">
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Create password" required>
+  </div>
+
+  <div class="input-group">
+    <label>Confirm Password</label>
+    <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+  </div>
+
+  <button type="submit" class="signup-btn">Sign Up</button>
+
+</form>
+
+
+      <p class="login-msg">
+        Already have an account?
+        <a href="../loginpage/login.html">Login</a>
+      </p>
+
+    </div>
+  </div>
+
+<script type="module" src="../firebase.js"></script>
+<script type="module" src="../authState.js"></script>
+
+<!-- UNIVERSAL NAV + HAMBURGER HANDLING -->
+<script type="module" src="../script.js"></script>
+<script type="module" src="../signuppage/signup.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Switzerland Tour Packages | Destinova</title>
+  <link rel="stylesheet" href="./swisstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<header>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/Images/Destinova (1).png" alt="Destinova logo" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <span id="usernameDisplay" class="username" style="display:none;"></span>
+      <a id="loginLink" class="action_btn" href="/loginpage/login.html">Login / Signup</a>
+      <a id="bookingLink" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a>
+      <button id="logoutLink" class="action_btn" style="display:none; cursor:pointer;">Logout</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <nav id="ham-nav">
+    <div class="logo">
+      <a href="/index.html"><img src="/Images/Destinova (1).png" alt="Destinova logo" /></a>
+    </div>
+
+    <div id="ham-icon" class="ham-menu" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul id="menu-links" class="menu-link">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+
+      <li id="usernameDisplayMobile" style="display:none;"></li>
+      <li><a id="loginLinkMobile" href="/loginpage/login.html">Login / Signup</a></li>
+      <li><a id="bookingLinkMobile" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a></li>
+      <li><button id="logoutLinkMobile" style="display:none; cursor:pointer;" class="action_btn">Logout</button></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="package-page">
+    <div class="package-hero">
+  <h1>Switzerland Tour Packages</h1>
+  <p>Snowy mountains, scenic lakes, and a peaceful escape in the Alps.</p>
+</div>
+
+<div class="package-container">
+
+  <div class="package-card">
+    <h2>Swiss Alps Adventure</h2>
+    <p><strong>Duration:</strong> 7 Days / 6 Nights</p>
+    <p><strong>Price:</strong> $2,299 per person</p>
+    <ul>
+      <li>Mt. Titlis & Cable Car Ride</li>
+      <li>Lucerne Lake Cruise</li>
+      <li>Interlaken & Jungfraujoch</li>
+      <li>Scenic Swiss countryside tour</li>
+    </ul>
+<button class="book-btn" data-country="Switzerland" data-package="Swiss Alps Adventure" data-duration="7 Days / 6 Nights" data-price="$2299"
+data-details='["Mt. Titlis & Cable Car Ride", "Lucerne Lake Cruise", "Interlaken & Jungfraujoch", "Scenic Swiss countryside tour"]'>
+  Book Now
+</button>
+  </div>
+
+  <div class="package-card">
+    <h2>Romantic Switzerland Tour</h2>
+    <p><strong>Duration:</strong> 6 Days / 5 Nights</p>
+    <p><strong>Price:</strong> $1,899 per person</p>
+    <ul>
+      <li>Zurich city tour</li>
+      <li>Geneva lakefront experience</li>
+      <li>Zermatt Glacier Paradise</li>
+      <li>Golden Pass train journey</li>
+    </ul>
+<button class="book-btn" data-country="Switzerland" data-package="Romantic Switzerland Tour" data-duration="6 Days / 5 Nights"  data-price="$1899"
+ data-details='["Zurich city tour", "Geneva lakefront experience", "Zermatt Glacier Paradise", "Golden Pass train journey"]'>
+  Book Now
+</button>
+  </div>
+
+</div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Destinova. All Rights Reserved.</p>
+  </footer>
+
+
+<script type="module" src="../firebase.js"></script>
+<script type="module" src="../authState.js"></script>
+<script type="module" src="../script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinova</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <!-- <link rel="stylesheet" href="./responsive.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./loginpage/login.css">
+</head>
+<body>
+<header>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/Images/Destinova (1).png" alt="Destinova logo" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#contactus">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <span id="usernameDisplay" class="username" style="display:none;"></span>
+      <a id="loginLink" class="action_btn" href="/loginpage/login.html">Login / Signup</a>
+      <a id="bookingLink" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a>
+      <button id="logoutLink" class="action_btn" style="display:none; cursor:pointer;">Logout</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <nav id="ham-nav">
+    <div class="logo">
+      <a href="/index.html"><img src="/Images/Destinova (1).png" alt="Destinova logo" /></a>
+    </div>
+
+    <div id="ham-icon" class="ham-menu" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul id="menu-links" class="menu-link">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#contactus">Contact Us</a></li>
+
+      <li id="usernameDisplayMobile" style="display:none;"></li>
+      <li><a id="loginLinkMobile" href="/loginpage/login.html">Login / Signup</a></li>
+      <li><a id="bookingLinkMobile" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a></li>
+      <li><button id="logoutLinkMobile" style="cursor:pointer;" class="action_btn">Logout</button></li>
+    </ul>
+  </nav>
+</header>
+
+ <!-- ===== HERO SECTION ===== -->
+<section class="main" id="home">
+  <div class="hero_can">
+    <div class="hero_part">
+      <h1>Get your visa hassle free</h1>
+      <p>Wherever you want to go — Destinova helps you reach your destination.</p>
+    </div>
+
+    <div class="search_center">
+      <div class="search">
+        <input
+          type="text"
+          id="country-search"
+          placeholder="Search your destinations here..."
+          autocomplete="off"
+        />
+        <button class="search_btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <ul id="suggestions" class="suggestions-list"></ul>
+      <h4>Find your next destination</h4>
+    </div>
+    
+     <!-- ===== EXPERIENCE SECTION ===== -->
+<section class="experience" id="experience">
+  <div class="exp-container">
+    <h2>Our Travel Experience</h2>
+    <p class="exp-sub">
+      With years of expertise in travel and visa assistance, Destinova ensures your journey is smooth, safe, and unforgettable.
+    </p>
+
+    <div class="exp-stats">
+      <div class="exp-card">
+        <i class="fa-solid fa-earth-americas"></i>
+        <h3>100+ Countries</h3>
+        <p>We offer seamless visa and travel services to top destinations across the globe.</p>
+      </div>
+
+      <div class="exp-card">
+        <i class="fa-solid fa-people-group"></i>
+        <h3>10,000+ Happy Travelers</h3>
+        <p>Thousands of satisfied clients have trusted us for their dream vacations.</p>
+      </div>
+
+      <div class="exp-card">
+        <i class="fa-solid fa-plane-departure"></i>
+        <h3>1000+ Flights</h3>
+        <p>Experience comfortable, affordable, and well-planned journeys worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+<!-- ===== DESTINATIONS SECTION ===== -->
+<section class="destination-list" id="tours">
+  <div id="headings">
+    <h2>Travel Destinations</h2>
+    <h3>Explore to your heart Content from our most popular Destinations</h3>
+  </div>
+  <div class="dest-grid">
+    <!-- Card 1 -->
+    <div class="dest-card">
+      <img src="./Images/japan.jpg" alt="Japan" />
+      <div class="dest-info">
+        <h3>Japan</h3>
+          <p>Discover Japan’s blend of ancient culture and futuristic cities.</p>
+        <a href="./pacakges/japan.html" class="view-btn">View Packages</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="dest-card">
+      <img src="./Images/aus.jpg" alt="Australia" />
+      <div class="dest-info">
+        <h3>Australia</h3>
+        <p>Tropical paradise with beaches, temples, and cultural wonders.</p>
+        <a href="./pacakges/aus.html" class="view-btn">View Packages</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="dest-card">
+      <img src="./Images/swiss.jpg" alt="Switzerland" />
+      <div class="dest-info">
+        <h3>Switzerland</h3>
+        <p>Snow-capped mountains, luxury resorts, and scenic landscapes.</p>
+        <a href="./pacakges/swiss.html" class="view-btn">View Packages</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="dest-card">
+      <img src="./Images/chile.jpg" alt="Chile" />
+      <div class="dest-info">
+        <h3>Chile</h3>
+            <p>From deserts to glaciers, Chile is adventure at every turn.</p>
+        <a href="./pacakges/chile.html" class="view-btn">View Packages</a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="dest-card">
+      <img src="./Images/canada.webp" alt="Canada" />
+      <div class="dest-info">
+        <h3>Canada</h3>
+          <p>Experience breathtaking nature and friendly urban life.</p>
+        <a href="./pacakges/canada.html" class="view-btn">View Packages</a>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="dest-card">
+      <img src="./Images/roc.webp" alt="Democratic Republic of Congo" />
+      <div class="dest-info">
+        <h3>Democratic Republic of Congo </h3>
+          <p>Untamed jungles and wildlife await in the heart of Africa.</p>
+        <a href="./pacakges/roc.html" class="view-btn">View Packages</a>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="dest-card">
+      <img src="./Images/russia.webp" alt="Russia" />
+      <div class="dest-info">
+        <h3>Russia</h3>
+          <p>Explore Russia’s grand history and stunning architecture.</p>
+        <a href="./pacakges/russia.html" class="view-btn">View Packages</a>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="dest-card">
+      <img src="./Images/singapore.webp" alt="Singapore" />
+      <div class="dest-info">
+        <h3>Singapore</h3>
+          <p>A vibrant city where modern life meets rich tradition.</p>
+        <a href="./pacakges/singapore.html" class="view-btn">View Packages</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== BLOGS SECTION ===== -->
+<section class="blogs" id="blogs">
+  <div class="blogs-container">
+    <h2 style="font-family: Momo Signature, cursive; font-size: 2.5rem; margin-bottom: 1rem">Our Latest Travel Stories</h2>
+    <p style="font-family: Momo Signature, cursive; margin-bottom: 1rem" class="blogs-sub">Get inspired by our travel guides, visa tips, and destination insights.</p>
+
+    <div class="swiper blogSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- 1 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <img src="./Images/japan2.webp">
+            <div class="blog-content">
+              <span class="blog-tag">Japan</span>
+              <h3>Experience the Magic of Cherry Blossoms</h3>
+              <p>Discover Japan’s beauty.</p>
+              <a href="./blogs/japan-blog.html" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <img src="./Images/aus5.jpg">
+            <div class="blog-content">
+              <span class="blog-tag">Australia</span>
+              <h3>Top 5 Beaches in Australia</h3>
+              <p>Golden sands and turquoise water.</p>
+              <a href="./blogs/aus-blog.html" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <img src="./Images/swiss2.webp">
+            <div class="blog-content">
+              <span class="blog-tag">Switzerland</span>
+              <h3>Winter Wonderland</h3>
+              <p>Snowy mountains & alpine views.</p>
+              <a href="./blogs/swiss-blog.html" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <img src="./Images/chile2.webp">
+            <div class="blog-content">
+              <span class="blog-tag">Chile</span>
+              <h3>Exploring Patagonia</h3>
+              <p>Trekking glaciers, lakes and remote wilderness.</p>
+              <a href="./blogs/chile-blog.html" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <img src="./Images/canada3.avif">
+            <div class="blog-content">
+              <span class="blog-tag">Canada</span>
+              <h3>Most Beautiful Places in Canada</h3>
+              <p>Discover lakes, mountains and natural wonders.</p>
+              <a href="./blogs/can-blog.html" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <img src="./Images/roc2.webp">
+            <div class="blog-content">
+              <span class="blog-tag">D.R. Congo</span>
+              <h3>Wildlife Adventures in Congo</h3>
+              <p>Untamed jungles and gorilla trekking.</p>
+              <a href="./blogs/dr-blog.html" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <img src="./Images/rus3.jpg">
+            <div class="blog-content">
+              <span class="blog-tag">Russia</span>
+              <h3>Architectural Marvels of Russia</h3>
+              <p>Explore iconic palaces and cities.</p>
+              <a href="./blogs/russ-blog.html" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <img src="./Images/singapore2.webp">
+            <div class="blog-content">
+              <span class="blog-tag">Singapore</span>
+              <h3>Explore Gardens by the Bay</h3>
+              <p>Modern city blended with green wonder.</p>
+              <a href="./blogs/sing-blog.html" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE DESTINOVA ===== -->
+<section class="why-choose">
+  <div class="choose-container">
+    <h2>Why Choose Destinova</h2>
+    <p class="choose-sub">
+      Discover the difference with Destinova — we make your travel dreams stress-free and unforgettable.
+    </p>
+
+    <div class="choose-grid">
+      <!-- Card 1 -->
+      <div class="choose-card">
+        <i class="fa-solid fa-earth-asia"></i>
+        <h3>Global Destinations</h3>
+        <p>From Australia to America, From Chile to China explore 100+ destinations curated for every traveler’s dream.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="choose-card">
+        <i class="fa-solid fa-plane-departure"></i>
+        <h3>Easy Visa Processing</h3>
+        <p>We handle your visa process efficiently so you can focus on your next adventure.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="choose-card">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <h3>Affordable Packages</h3>
+        <p>Choose from affordable, customizable packages for every budget and traveler type.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="choose-card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>24/7 Support</h3>
+        <p>Our travel experts are available around the clock to assist you anytime, anywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMMON QUESTIONS (FAQ) ===== -->
+<section class="faq-section">
+  <div class="faq-container">
+    <h2>Common Questions</h2>
+    <p class="faq-sub">Here are some of the most asked questions about Destinova and our services.</p>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>How do I apply for a visa through Destinova?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          You can apply for a visa directly through our website. Simply search your destination,
+          select your visa type, and fill out the required information. Our team will guide you through the rest!
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>How long does the visa approval process take?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Processing times vary depending on the destination, but typically take between 5 to 15 business days.
+          Express options are available for certain countries.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Can I customize my travel package?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Absolutely! Destinova offers fully customizable packages to match your travel preferences, 
+          including flights, hotels, and tours.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Is customer support available 24/7?</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes, our support team is available 24/7 via chat, phone, and email to help you before, during, 
+          and after your trip.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="contactus" style="scroll-margin-top: 120px; padding-top: 2rem;">
+  <div class="footer-top">
+    <div class="footer-logo-desc">
+      <a href="#home"><img src="./Images/Destinova (1).png" alt="Destinova Logo" class="footer-logo"></a>
+      <p>Your trusted travel partner — From visas to adventures, Destinova makes your Destinations simple and unforgettable.</p>
+        <div class="footer-contact">
+        <p><i class="fa-solid fa-phone"></i> +1 (800) 456-7890</p>
+        <p><i class="fa-solid fa-envelope"></i> support@destinova.com</p>
+        <p class="footer-tagline">🌍 Serving travelers all over the world — 100% online assistance</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Visa Processing</a></li>
+          <li><a href="#">Tours & Packages</a></li>
+          <li><a href="#">Custom Trips</a></li>
+          <li><a href="#">Support 24/7</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <ul class="social-list">
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div> <!-- /.footer-links -->
+  </div> <!-- /.footer-top -->
+
+<div class="footer-bottom">
+  <p>© 2025 Destinova. All rights reserved.</p>
+  <p>Designed with love for travel.</p>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script type="module" src="/firebase.js"></script>
+<script type="module" src="/authState.js"></script>
+
+<script type="module" src="/script.js"></script>
+
+</body>
+</html>

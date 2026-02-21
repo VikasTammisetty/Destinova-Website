@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #0f172a;
+  --accent-color: #38bdf8;
+  --accent-hover: #2563eb;
+  --light-bg: #f8fafc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url('../Images/homeimg1.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === SIGNUP CONTAINER === */
+.signup-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-box {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 2.7rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  text-align: center;
+}
+
+.signup-box h2 {
+  font-size: 1.9rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 1.8rem;
+  font-size: 0.95rem;
+}
+
+/* === INPUTS === */
+.input-group {
+  text-align: left;
+  margin-bottom: 1.1rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: 1.7px solid #cbd5e1;
+  margin-top: 0.35rem;
+  outline: none;
+  background: #ffffff;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.25);
+}
+
+/* === SIGNUP BUTTON === */
+.signup-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: var(--accent-hover);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #1e40af;
+}
+
+/* === LOGIN LINK === */
+.login-msg {
+  margin-top: 1.3rem;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.login-msg a {
+  color: var(--accent-hover);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-msg a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 480px) {
+  .signup-box {
+    padding: 2rem 1.3rem;
+  }
+}

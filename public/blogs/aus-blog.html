@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australia Travel Blogs | Destinova</title>
+  <link rel="stylesheet" href="./blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="aus-blog">
+
+<!-- HEADER -->
+<header>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/Images/Destinova (1).png" alt="Destinova logo" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <span id="usernameDisplay" class="username" style="display:none;"></span>
+      <a id="loginLink" class="action_btn" href="/loginpage/login.html">Login / Signup</a>
+            <a id="bookingLink" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a>
+
+      <button id="logoutLink" class="action_btn" style="display:none; cursor:pointer;">Logout</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <nav id="ham-nav">
+    <div class="logo">
+      <a href="/index.html"><img src="/Images/Destinova (1).png" alt="Destinova logo" /></a>
+    </div>
+
+    <div id="ham-icon" class="ham-menu" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul id="menu-links" class="menu-link">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+
+      <li id="usernameDisplayMobile" style="display:none;"></li>
+      <li><a id="loginLinkMobile" href="/loginpage/login.html">Login / Signup</a></li>
+            <li><a id="bookingLinkMobile" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a></li>
+
+      <li><button id="logoutLinkMobile" style="display:none; cursor:pointer;" class="action_btn">Logout</button></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- BLOG HERO -->
+<section class="blog-hero">
+  <h1>Australia Travel Stories</h1>
+</section>
+
+<!-- BLOG LIST -->
+<div class="blog-container">
+
+  <div class="blog-article">
+    <img src="/Images/aus2.png" alt="Australia Beach">
+    <div class="blog-content">
+      <h2>Top 5 Beaches in Australia</h2>
+      <p>Australia is home to some of the world’s most stunning beaches — from Sydney’s Bondi Beach to the crystal-clear Whitsundays.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <div class="blog-article">
+    <img src="/Images/aus6.jpg" alt="Great Barrier Reef">
+    <div class="blog-content">
+      <h2>Great Barrier Reef — A Natural Wonder</h2>
+      <p>Explore vibrant marine life, colorful corals, underwater caves, and world-class diving spots.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <div class="blog-article">
+    <img src="/Images/aus4.jpg" alt="Sydney Adventures">
+    <div class="blog-content">
+      <h2>Sydney Adventures</h2>
+      <p>The Opera House, Harbour Bridge, and wildlife parks make Sydney a dream destination for every traveler.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <p>© 2025 Destinova. All Rights Reserved.</p>
+</footer>
+
+<!-- UNIVERSAL AUTH HANDLING -->
+ 
+<script type="module" src="../firebase.js"></script>
+<script type="module" src="../authState.js"></script>
+<script type="module" src="../script.js"></script>
+
+</body>
+</html>

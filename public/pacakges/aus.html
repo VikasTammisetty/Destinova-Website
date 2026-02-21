@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Australia Tour Packages | Destinova</title>
+  <link rel="stylesheet" href="./ausstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/Images/Destinova (1).png" alt="Destinova logo" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <span id="usernameDisplay" class="username" style="display:none;"></span>
+      <a id="loginLink" class="action_btn" href="/loginpage/login.html">Login / Signup</a>
+      <a id="bookingLink" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a>
+
+      <button id="logoutLink" class="action_btn" style="display:none; cursor:pointer;">Logout</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <nav id="ham-nav">
+    <div class="logo">
+      <a href="/index.html"><img src="/Images/Destinova (1).png" alt="Destinova logo" /></a>
+    </div>
+
+    <div id="ham-icon" class="ham-menu" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul id="menu-links" class="menu-link">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+
+      <li id="usernameDisplayMobile" style="display:none;"></li>
+      <li><a id="loginLinkMobile" href="/loginpage/login.html">Login / Signup</a></li>
+      <li><a id="bookingLinkMobile" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a></li>
+
+      <li><button id="logoutLinkMobile" style="display:none; cursor:pointer;" class="action_btn">Logout</button></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- PACKAGE HERO -->
+<section class="package-page">
+  <div class="package-hero">
+    <h1>Australia Tour Packages</h1>
+    <p>Sun, beaches, wildlife, and adventure await you.</p>
+  </div>
+
+  <div class="package-container">
+    <div class="package-card">
+      <h2>Sydney-Melbourne Explorer</h2>
+      <p><strong>Duration:</strong> 6 Days</p>
+      <p><strong>Price:</strong> $1,299</p>
+      <ul>
+        <li>Sydney Opera House tour</li>
+        <li>Bondi Beach & Harbour Cruise</li>
+        <li>Melbourne city tour</li>
+        <li>Great Ocean Road experience</li>
+      </ul>
+      <button class="book-btn" data-country="Australia" data-package="Sydney-Melbourne Explorer" data-duration="6 Days" data-price="$1299"
+       data-details='["Sydney Opera House tour", "Bondi Beach & Harbour Cruise", "Melbourne city tour", "Great Ocean Road experience"]'>Book Now</button>
+    </div>
+
+    <div class="package-card">
+      <h2>Australia Nature Escape</h2>
+      <p><strong>Duration:</strong> 9 Days</p>
+      <p><strong>Price:</strong> $1,999</p>
+      <ul>
+        <li>Gold Coast adventures</li>
+        <li>Blue Mountains tour</li>
+        <li>Wildlife park safari</li>
+        <li>Hamilton Island</li>
+      </ul>
+      <button class="book-btn" data-country="Australia" data-package="Australia Nature Escape" data-duration="9 Days"
+       data-price="$1,999" data-details='["Gold Coast adventures", "Blue Mountains tour", "Wildlife park safari","Hamilton Island"]'>Book Now</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Destinova. All Rights Reserved.</p>
+</footer>
+
+<script type="module" src="../firebase.js"></script>
+<script type="module" src="../authState.js"></script>
+<script type="module" src="../script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japan Tour Packages | Destinova</title>
+  <link rel="stylesheet" href="./japstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/></head>
+<body>
+ <header>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/Images/Destinova (1).png" alt="Destinova logo" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <span id="usernameDisplay" class="username" style="display:none;"></span>
+      <a id="loginLink" class="action_btn" href="/loginpage/login.html">Login / Signup</a>
+      <a id="bookingLink" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a>
+      <button id="logoutLink" class="action_btn" style="display:none; cursor:pointer;">Logout</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <nav id="ham-nav">
+    <div class="logo">
+      <a href="/index.html"><img src="/Images/Destinova (1).png" alt="Destinova logo" /></a>
+    </div>
+
+    <div id="ham-icon" class="ham-menu" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul id="menu-links" class="menu-link">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+
+      <li id="usernameDisplayMobile" style="display:none;"></li>
+      <li><a id="loginLinkMobile" href="/loginpage/login.html">Login / Signup</a></li>
+      <li><a id="bookingLinkMobile" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a></li>
+      <li><button id="logoutLinkMobile" style="display:none; cursor:pointer;" class="action_btn">Logout</button></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- PACKAGE HERO -->
+  <section class="package-page">
+    <div class="package-hero">
+      <h1>Japan Tour Packages</h1>
+      <p>Experience Japan’s perfect mix of tradition, technology, and tranquility.</p>
+    </div>
+
+    <div class="package-container">
+      <div class="package-card">
+        <h2>Tokyo & Kyoto Explorer</h2>
+        <p><strong>Duration:</strong> 7 Days / 6 Nights</p>
+        <p><strong>Price:</strong> $1,499 per person</p>
+        <ul>
+          <li>Explore Tokyo, Shibuya, and Asakusa</li>
+          <li>Visit Mt. Fuji & Hakone Lake Cruise</li>
+          <li>Kyoto shrines, bamboo forests</li>
+          <li>Departure from Osaka</li>
+        </ul>
+        <button class="book-btn" data-country="Japan" data-package="Tokyo & Kyoto Explorer" data-duration="7 Days / 6 Nights" data-price="$1499"
+        data-details='["Explore Tokyo Tower, Shibuya, and Asakusa Temple", "Visit Mt. Fuji & Hakone Lake Cruise", "Kyoto shrines, bamboo forests, and Gion District", "Departure from Osaka"]' >Book Now</button>
+      </div>
+      <div class="package-card">
+        <h2>Cherry Blossom Special</h2>
+        <p><strong>Duration:</strong> 10 Days / 9 Nights</p>
+        <p><strong>Price:</strong> $2,199 per person</p>
+        <ul>
+          <li>Tokyo cherry blossom parks</li>
+          <li>Kyoto’s Philosopher’s Path</li>
+          <li>Nara deer park visit</li>
+          <li>Hiroshima & Miyajima Island</li>
+        </ul>
+        <button class="book-btn" data-country="Japan" data-package="Cherry Blossom Special" data-duration="10 Days / 9 Nights" data-price="$2199"
+        data-details='["Tokyo cherry blossom parks", "Kyoto’s Philosopher’s Path", "Nara deer park visit", "Hiroshima & Miyajima Island"]'>Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Destinova. All Rights Reserved.</p>
+  </footer>
+
+<script type="module" src="../firebase.js"></script>
+<script type="module" src="../authState.js"></script>
+<script type="module" src="../script.js"></script>
+
+</body>
+</html>

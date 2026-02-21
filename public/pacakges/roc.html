@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROC Tour Packages | Destinova</title>
+  <link rel="stylesheet" href="./rocstyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/></head>
+<body>
+  <header>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/Images/Destinova (1).png" alt="Destinova logo" />
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <span id="usernameDisplay" class="username" style="display:none;"></span>
+      <a id="loginLink" class="action_btn" href="/loginpage/login.html">Login / Signup</a>
+      <a id="bookingLink" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a>
+      <button id="logoutLink" class="action_btn" style="display:none; cursor:pointer;">Logout</button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <nav id="ham-nav">
+    <div class="logo">
+      <a href="/index.html"><img src="/Images/Destinova (1).png" alt="Destinova logo" /></a>
+    </div>
+
+    <div id="ham-icon" class="ham-menu" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul id="menu-links" class="menu-link">
+      <li><a href="/index.html#home">Home</a></li>
+      <li><a href="/index.html#tours">Tours</a></li>
+      <li><a href="/index.html#blogs">Blogs</a></li>
+      <li><a href="/index.html#contactus">Contact Us</a></li>
+
+      <li id="usernameDisplayMobile" style="display:none;"></li>
+      <li><a id="loginLinkMobile" href="/loginpage/login.html">Login / Signup</a></li>
+      <li><a id="bookingLinkMobile" class="action_btn" href="/bookings/booking.html" style="display:none;">My Bookings</a></li>
+      <li><button id="logoutLinkMobile" style="display:none; cursor:pointer;" class="action_btn">Logout</button></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- PACKAGE HERO -->
+    <section class="package-page">
+   <div class="package-hero">
+  <h1>Republic of Congo Tour Packages</h1>
+  <p>Untamed wildlife, rainforests, and breathtaking African landscapes.</p>
+</div>
+
+<div class="package-container">
+
+  <div class="package-card">
+    <h2>Odzala National Park Safari</h2>
+    <p><strong>Duration:</strong> 6 Days / 5 Nights</p>
+    <p><strong>Price:</strong> $2,599 per person</p>
+    <ul>
+      <li>Gorilla trekking</li>
+      <li>Forest wildlife tours</li>
+      <li>River basin exploration</li>
+      <li>Luxury jungle lodge stay</li>
+    </ul>
+<button class="book-btn" data-country="Democratic Republic of Congo" data-package="Odzala National Park Safari" data-duration="6 Days / 5 Nights" data-price="$2599"
+data-details='["Gorilla trekking", "Forest wildlife tours", "River basin exploration", "Luxury jungle lodge stay"]' >Book Now</button>
+  </div>
+
+  <div class="package-card">
+    <h2>Congo Wildlife & Culture Tour</h2>
+    <p><strong>Duration:</strong> 8 Days / 7 Nights</p>
+    <p><strong>Price:</strong> $3,099 per person</p>
+    <ul>
+      <li>Brazzaville city cultural tour</li>
+      <li>Local tribe interactions</li>
+      <li>Léfini Reserve safari</li>
+      <li>Koukouya village experience</li>
+    </ul>
+<button class="book-btn" data-country="Democratic Republic of Congo" data-package="Congo Wildlife & Culture Tour" data-duration="8 Days / 7 Nights" 
+data-price="$3099" data-details='["Brazzaville city cultural tour", "Local tribe interactions", "Léfini Reserve safari", "Koukouya village experience"]'>Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Destinova. All Rights Reserved.</p>
+  </footer>
+
+<script type="module" src="../firebase.js"></script>
+<script type="module" src="../authState.js"></script>
+<script type="module" src="../script.js"></script>
+
+
+</body>
+</html>
